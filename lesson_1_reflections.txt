@@ -1,0 +1,6 @@
+Okay, my first reflection.
+
+I can see how an automated way to compare versions of documents would be useful
+for identifying issues, bugs, changes, etc.
+
+It takes me back to MS SourceSafe.
