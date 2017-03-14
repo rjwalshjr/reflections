@@ -1,3 +1,33 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 Git sets up the infrastructure required to start tracking versions.
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area is a listing of files that 1) have been changed and
+2) will be uploaded to Git repository. The working directory is the 'home'
+directory of the clone.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+You can 'git add' files into the staging area into logical groups. To confirm,
+you can use 'git diff' to understand which changes you've staged.
+
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+Branches are a way to isolate development efforts and incorporate them into
+the larger effort in an asynchronous way.
+
+How do the diagrams help you visualize the branch structure?
+
+Branches help to explain dependencies, history, and more clearly see isolated
+work.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+Merging two branches together combines the additions from both branches into a
+single file. It is a union of two lines of work.
