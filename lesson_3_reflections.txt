@@ -1,0 +1,46 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+1) Whenever you would like to work collaboratively
+2) Whenever you would like to use multiple devices to accesss your work
+3) Whenever you would like to have disaster recovery options
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+If there are changes to pull, they were probably placed there by someone else.
+Unless those changes are relevant to the work you are performing in your branch,
+e.g., those changes fix or improve something upon which your branch depends,
+then it is probably best to pull changes manually. Even if those changes
+improve and/or enable the work in your branch, it would be useful to know
+which changes you were incorporating locally by reviewing the changes on GitHub
+before pulling (or having them 'pulled' automatically. Wordy response...would
+benefit from tightening.
+
+Describe the differences between forks, clones, and branches. When would you
+use one instead of another?
+
+Forks are clones hosted on GitHub. Clones are copies of entire repositories.
+Branches are logically isolated changes from a clone.
+
+I would use forks when I want to experiment or change something that is
+publicly hosted on GitHub. I would use clones if I want to work on something
+locally (perhaps to test). I would use branches if I want to isolate the
+changes I am making (in case I break something!).
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+Having the most recent copy helps ensure that you are working on the 'best'
+working version of the repository. It also helps guide development by reducing
+the chance of conflict, rework, or change in intended functionality.
+
+
+How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+
+I expect that I would collaborate using a tool like Google Drive. What might be
+easier is that there would be automated versioning, so nothing would ever be
+lost. What might be harder would be isolating changes and maintaining a 'ready'
+product.
+

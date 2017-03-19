@@ -4,7 +4,7 @@ git checkout                        |    Shows a previous version of the file.
 git checkout master                 |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
 git checkout -b new_branch_name     |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
 git clone                           |    Create a local copy/clone from the repository
-git commit                          |    Commit the files from the staging area to the repository 
+git commit                          |    Commit the files from the staging area to the repository
 git config --global color.ui auto   |    get colored diff output
 git diff                            |    Git diff without arguments is comparing the working directory with the staging area
 git diff --staged                   |    Compare the staging area with the repository
@@ -14,6 +14,7 @@ git log --stat                      |    Show addition information about the com
 git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
 git merge branch1 branch2           |    Merge two branches, branch2 get merged into branch1
 git push <remote> <branch>          |    Push commits in <branch> to <remote>, traditionally called 'origin', e.g., git push origin master
+git remote -v                       |    Shows the name and URL of the remote for the local branch
 git reset --hard                    |    Undo all changes! There is no rollback for this, so be carefull!
 git show commitId                   |    Show the changes made in this commit compared to the previous version. This is working even after merging.
-git status                          |    Show which files are in the staging area, and which files from the working directory are not part of the repository    
+git status                          |    Show which files are in the staging area, and which files from the working directory are not part of the repository

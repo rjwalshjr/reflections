@@ -31,3 +31,9 @@ the diagram the way we do?
 
 Merging two branches together combines the additions from both branches into a
 single file. It is a union of two lines of work.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Automatic merging makes merging faster and is appropriate for simple cases.
+Manual merging is safer for cases where merges may create conflicts.
