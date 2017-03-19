@@ -9,6 +9,7 @@ git config --global color.ui auto   |    get colored diff output
 git diff                            |    Git diff without arguments is comparing the working directory with the staging area
 git diff --staged                   |    Compare the staging area with the repository
 git diff id1 id2                    |    Compare two commits
+git fetch <remote>                  |    Retrieve latest copy of repository without merging allowing git diff utility
 git log                             |    List the commits and show which files have changed
 git log --stat                      |    Show addition information about the commits
 git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
@@ -18,3 +19,5 @@ git remote -v                       |    Shows the name and URL of the remote fo
 git reset --hard                    |    Undo all changes! There is no rollback for this, so be carefull!
 git show commitId                   |    Show the changes made in this commit compared to the previous version. This is working even after merging.
 git status                          |    Show which files are in the staging area, and which files from the working directory are not part of the repository
+
+git pull origin master = git fetch origin + git merge master/origin master

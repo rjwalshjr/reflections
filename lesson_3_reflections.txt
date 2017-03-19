@@ -44,3 +44,11 @@ easier is that there would be automated versioning, so nothing would ever be
 lost. What might be harder would be isolating changes and maintaining a 'ready'
 product.
 
+When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+When your changes are only part of the improvements/fixes that are being made
+to the overall product. Working on the master probably works well for simpler
+changes that do not interact with other features of the product. Working on
+branches reinforces the isolation and creates a more methodical approval process
+for incorporating changes.
