@@ -16,8 +16,32 @@ git log --graph --oneline <branch1> <branch2>  |    Show a visual representation
 git merge branch1 branch2           |    Merge two branches, branch2 get merged into branch1
 git push <remote> <branch>          |    Push commits in <branch> to <remote>, traditionally called 'origin', e.g., git push origin master
 git remote -v                       |    Shows the name and URL of the remote for the local branch
+git remove add <remote> URL         |    Clone the master again to work around merge conflicts. Normally remote = "upstream"
 git reset --hard                    |    Undo all changes! There is no rollback for this, so be carefull!
 git show commitId                   |    Show the changes made in this commit compared to the previous version. This is working even after merging.
 git status                          |    Show which files are in the staging area, and which files from the working directory are not part of the repository
 
 git pull origin master = git fetch origin + git merge master/origin master
+
+Situation....
+o  You have forked your Github master from another Github repository
+o  You are working on a branch locally called "changes"
+o  You are ready to merge your changes when you find there are conflicts due to continuing work on the Github repository by others
+a  You want to clone the Github repository to download those changes causing the conflict
+b  You want to merge the local repository with your local master copy
+c  You want to merge your branch with the updated local master by resolving the conflicts
+d  You want to update your master on Github with your changes
+o  You want to merge your Github master with the original Github repository
+
+a  git remote add upstream https://github.com/name-of-original-repository.git
+o  git checkout master
+b  git pull upstream master
+o  git checkout changes
+c  git merge master changes
+o  git add <changed-files>
+o  git commit changes -m "XYZ: description of changes"
+d  git push origin changes
+o  Go to https://github.com/name-of-your-master.git 
+o  Accept your changes
+o  Create a pull request with original repository
+
